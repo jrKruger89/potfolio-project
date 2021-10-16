@@ -8,76 +8,74 @@ $primary-font: "Roboto", sans-serif;
 
 /*----- CSS Reset -----*/
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: $primary-color;
-  font-family: $primary-font;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $primary-color;
+    font-family: $primary-font;
 }
 
 /*----- Burger -----*/
 .burger {
-  width: 50px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 15px;
-  cursor: pointer;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    cursor: pointer;
 }
 
 .line {
-  background-color: $contrast-color;
-  height: 4px;
-  width: 50px;
-  border-radius: 15px;
-  transition: 0.4s;
+    background-color: $contrast-color;
+    height: 4px;
+    width: 50px;
+    border-radius: 15px;
+    transition: 0.4s;
 }
 
 .line2 {
-  margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 /* Rotate first bar */
 .open .line1 {
-  transform: rotate(-45deg) translate(-10px, 10px);
+    transform: rotate(-45deg) translate(-10px, 10px);
 }
 
 /* Fade out the second bar */
 .open .line2 {
-  opacity: 0;
+    opacity: 0;
 }
 
 /* Rotate last bar */
 .open .line3 {
-  transform: rotate(45deg) translate(-10px, -10px);
+    transform: rotate(45deg) translate(-10px, -10px);
 }
 
 /*----- Nav Styling -----*/
 .navbar {
-  background-color: $secondary-color;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border-bottom: 1px solid $contrast-color;
+    background-color: $secondary-color;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-list {
-  margin: 0;
-  padding: 20px;
-  background-color: $secondary-color;
-  list-style: none;
-  position: absolute;
-  transition: all 0.4s;
-  top: 61px;
-  left: -100px;
-  height: 100vh;
-  border-right: 1px solid $contrast-color;
+    margin: 0;
+    padding: 20px;
+    background-color: $secondary-color;
+    list-style: none;
+    position: absolute;
+    transition: all 0.4s;
+    top: 60px;
+    left: -150px;
+    min-height: 100vh;
 }
 
 .nav-item {
-  color: $contrast-color;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0 0 20px 0;
+    color: $contrast-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
 }

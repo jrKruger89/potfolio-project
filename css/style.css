@@ -69,7 +69,9 @@ a {
 
 /* Fade out the second bar */
 .open .line2 {
-  opacity: 0;
+  width: 0px;
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
 }
 
 /* Rotate last bar */

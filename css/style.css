@@ -1,5 +1,9 @@
 /*----- Sass Variables -----*/
 /*----- CSS Reset -----*/
+html {
+  font-size: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,9 +13,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*----- General Styling -----*/
+h1 {
+  color: #d2d2d2;
+  font-size: 2.5em;
+}
+
+p {
+  color: #949494;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #da0037;
+  border-radius: 18px;
+  border: 1px solid #da0037;
+  color: #d2d2d2;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*----- Burger -----*/
 .burger {
-  width: 50px;
+  width: 40px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -23,7 +51,7 @@ body {
 .line {
   background-color: #da0037;
   height: 4px;
-  width: 50px;
+  width: 40px;
   border-radius: 15px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -55,6 +83,7 @@ body {
   background-color: #171717;
   height: 60px;
   position: fixed;
+  z-index: 5;
   top: 0;
   width: 100%;
 }
@@ -65,17 +94,70 @@ body {
   background-color: #171717;
   list-style: none;
   position: absolute;
+  z-index: 5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   top: 60px;
-  left: -150px;
+  left: -200px;
   min-height: 100vh;
 }
 
 .nav-item {
   color: #da0037;
+  font-size: 1.2em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0 0 20px 0;
+  letter-spacing: 0.3em;
+  margin: 0 0 30px 0;
+}
+
+/*----- Main -----*/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.blur {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.profil-section {
+  width: 252px;
+  margin: 140px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.profil-pic {
+  height: 250px;
+  width: 250px;
+  border: 1px solid #949494;
+  border-radius: 50%;
+}
+
+.index-title {
+  margin: 10px 0;
+}
+
+.index-text {
+  margin: 0;
+}
+
+.read-more-btn {
+  height: 35px;
+  width: 110px;
+  margin: 15px 0;
 }
 /*# sourceMappingURL=style.css.map */

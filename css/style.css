@@ -19,9 +19,13 @@ h1 {
   font-size: 2.5em;
 }
 
+h2 {
+  color: #d2d2d2;
+}
+
 p {
   color: #949494;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 button {
@@ -65,6 +69,7 @@ a {
 .open .line1 {
   -webkit-transform: rotate(-45deg) translate(-10px, 10px);
           transform: rotate(-45deg) translate(-10px, 10px);
+  background-color: #d2d2d2;
 }
 
 /* Fade out the second bar */
@@ -72,12 +77,14 @@ a {
   width: 0px;
   -webkit-transform: translateX(-75px);
           transform: translateX(-75px);
+  background-color: #d2d2d2;
 }
 
 /* Rotate last bar */
 .open .line3 {
   -webkit-transform: rotate(45deg) translate(-10px, -10px);
           transform: rotate(45deg) translate(-10px, -10px);
+  background-color: #d2d2d2;
 }
 
 /*----- Nav Styling -----*/
@@ -110,6 +117,12 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   margin: 0 0 30px 0;
+  font-weight: 600;
+}
+
+.active-page {
+  color: #d2d2d2;
+  border-bottom: #d2d2d2 2px solid;
 }
 
 /*----- Main -----*/
@@ -135,9 +148,10 @@ main {
           filter: blur(10px);
 }
 
+/*----- Index Page -----*/
 .profil-section {
   width: 252px;
-  margin: 140px 0 0 0;
+  margin: 150px 0 0 0;
   display: -ms-grid;
   display: grid;
 }
@@ -150,7 +164,7 @@ main {
 }
 
 .index-title {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .index-text {
@@ -158,8 +172,65 @@ main {
 }
 
 .read-more-btn {
-  height: 35px;
+  height: 40px;
   width: 110px;
-  margin: 15px 0;
+  margin: 20px 0 120px 0;
+}
+
+/*----- About Page -----*/
+.about-section {
+  margin: 140px 0 0 0;
+}
+
+/*----- Projects Page -----*/
+/*----- Footer -----*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #171717;
+  height: 150px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contact-title {
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.icon-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: #da0037;
+  border-radius: 10px;
+  border: 1px solid #da0037;
+  padding: 0 8px 0 8px;
+}
+
+.fab,
+.fas {
+  font-size: 2.5em;
+  background-color: #da0037;
+  color: #d2d2d2;
 }
 /*# sourceMappingURL=style.css.map */
